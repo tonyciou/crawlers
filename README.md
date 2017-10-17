@@ -18,7 +18,7 @@ docker build -t=crawler-dev .
 Running instance of image.
 
 ```
-docker run -it -v="$PWD/demo:/opt/notebooks" -p 8888:8888 crawler-dev /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet  && /opt/conda/bin/jupyter notebook --allow-root --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser
+docker run -it -v="$PWD/demo:/opt/notebooks" -p 8888:8888 crawler-dev /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet  && /opt/conda/bin/jupyter notebook --allow-root --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser"
 ```
 
 If it runs successfully, you will see something like this on your terminal
