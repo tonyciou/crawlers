@@ -9,19 +9,19 @@ https://docs.docker.com/engine/installation/
 
 # How to use
 
-After clone this repository, you need to build docker image using Dockerfile.
+After cloning this repository, you need to build a docker image using the Dockerfile.
 
 ```
 docker build -t=crawler-dev .
 ```
 
-Running instance of image.
+Then, run an instance of image.
 
 ```
 docker run -it -v="$PWD/demo:/opt/notebooks" -p 8888:8888 crawler-dev /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet  && /opt/conda/bin/jupyter notebook --allow-root --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser"
 ```
 
-If it runs successfully, you will see something like this on your terminal
+If it runs successfully, you will see something like this on your terminal.
 
 ```
 Copy/paste this URL into your browser when you connect for the first time,
